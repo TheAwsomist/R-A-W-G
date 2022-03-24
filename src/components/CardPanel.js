@@ -9,17 +9,18 @@ import { useDispatch } from "react-redux";
 
 const CardPanel = () => {
 
-let data=null;
 const dispatcher = useDispatch();
 
 const getter = () =>{
+  let data=null;
     axios.get("https://api.rawg.io/api/games?key=c722bbd26213490ca081fa417a1028ad").then(response =>{
         data = response.data.results;
         // console.log(data);
     });
+    return data;
 }
 
-useEffect(()=>getter(),[]);
+useEffect(()=>dispatcher(()=>calldata(getter())),[]);
   return (
     <div style={{display:"flex",flexWrap:"wrap",columnGap:"20px",rowGap:"20px",width:"85vw"}}>
       <CardShort />
