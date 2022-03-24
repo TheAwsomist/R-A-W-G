@@ -1,0 +1,38 @@
+.header {
+  h1 {
+    font-size: 72px;
+    margin-bottom: 10px;
+  }
+  p {
+    margin: 0;
+  }
+
+  .shiny-header-subtitle {
+    background: linear-gradient(#f17877, #bc3c60);
+    width: 79vw;
+    display: flex;
+    align-items: center;
+    padding: 16px 16px 16px 32px;
+    margin: 32px 0 40px;
+    border-radius: 10px;
+    .shiny {
+      height: 4em;
+      width: 20em;
+      background-color: rgba(255, 255, 255, 0.1);
+      transition: 0.1s all ease-in;
+      p {
+        color: white;
+        opacity: 1;
+      }
+      outline: none;
+      border: none;
+      border-radius: 5px;
+    }
+    .shiny:hover {
+      background-color: rgba(255, 255, 255, 1);
+      p {
+        color: black;
+      }
+    }
+  }
+}

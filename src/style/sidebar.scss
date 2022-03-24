@@ -1,0 +1,19 @@
+.sidebar{
+    // margin-top: 40px;
+    // background-color: #272727;
+    width: 13em;
+    height: 100vh;
+    padding: 20px 30px;
+    padding-left: 50px;
+    .sidebar-title{
+        font-size: 1.5em;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+}
+
+.sidebar-item{
+    display: flex;
+    align-items: center;
+    height: 3em;
+}

@@ -1,0 +1,78 @@
+.top-nav {
+  margin-top: 1em;
+  width: 96vw;
+  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top-nav .top-nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15%;
+}
+
+.top-nav .top-nav-items .profilepic {
+  width: 2.8em;
+  height: 2.8em;
+  background-color: grey;
+  border-radius: 50px;
+}
+
+.top-nav h4 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 7px;
+}
+
+.searchbar {
+  background-color: #494949;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75%;
+  height: 2.7em;
+  border-radius: 30px;
+  padding-left: 20px;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+.searchbar input {
+  margin-left: 5px;
+  border: none;
+  font-size: small;
+  background-color: #494949;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  width: 100%;
+  color: white;
+}
+
+.searchbar input:focus {
+  outline: none;
+}
+
+.searchbar:hover, .searchbar:focus {
+  background-color: white;
+}
+
+.searchbar:hover input, .searchbar:focus input {
+  background-color: white;
+  color: black;
+}
+/*# sourceMappingURL=topnav.css.map */

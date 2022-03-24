@@ -1,0 +1,47 @@
+.cardshort {
+  border-radius: 20px;
+  width: 23%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #282424;
+}
+
+.cardshort .icons {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cardshort .poster {
+  height: 55%;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.cardshort .info {
+  height: 45%;
+  padding: 5px 20px 30px 20px;
+}
+
+.cardshort .info h2 {
+  margin: 5px 0px;
+  font-size: 1.7rem;
+  line-height: 40px;
+}
+
+.cardshort .tag {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 7px 20px;
+  height: 20px;
+  background-color: #373737;
+  font-weight: 600;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=CardPanel.css.map */
