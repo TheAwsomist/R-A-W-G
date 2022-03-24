@@ -1,6 +1,6 @@
-export const calldata = (payload) =>{
+export const calldata = (data) =>{
     return {
         type:"calldata",
-        payload : payload
+        payload : data
     }
 }
