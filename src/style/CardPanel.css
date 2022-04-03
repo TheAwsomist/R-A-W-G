@@ -1,10 +1,55 @@
-.cardshort {
-  border-radius: 20px;
+.cardshort:hover {
   width: 23%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  position: absolute;
+}
+
+.cardshort:hover .moreinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid grey;
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+
+.placer {
+  width: 23%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cardshort {
+  border-radius: 20px;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #282424;
+}
+
+.cardshort .moreinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s,opacity 0.2s linear,-webkit-transform 0.2s linear;
+  transition: visibility 0s,opacity 0.2s linear,-webkit-transform 0.2s linear;
+  transition: visibility 0s,opacity 0.2s linear,transform 0.2s linear;
+  transition: visibility 0s,opacity 0.2s linear,transform 0.2s linear,-webkit-transform 0.2s linear;
+}
+
+.cardshort .moreinfo p {
+  margin-bottom: 5px;
 }
 
 .cardshort .icons {

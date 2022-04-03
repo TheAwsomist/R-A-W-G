@@ -1,6 +1,6 @@
 
 const initialstate = {
-  games: {},
+  games: [],
 };
 
 export const GameReducer = (state = initialstate, action) => {

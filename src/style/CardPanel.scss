@@ -1,6 +1,39 @@
-.cardshort{
-    border-radius: 20px;
+.cardshort:hover{
+    width:23%;
+    height: fit-content;
+    position: absolute;
+    .moreinfo{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid grey;
+        opacity: 1;
+        visibility: visible;
+        position:relative;
+    }
+}
+.cardpanel{
+    
+}
+
+.placer{
     width: 23%;
+    display: flex;
+}
+
+.cardshort{
+    .moreinfo{
+        display: flex;
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s,opacity 0.2s linear,transform 0.2s linear;
+        p{
+            margin-bottom: 5px;
+        }
+    }
+    border-radius: 20px;
+    width: 100%;
+    // transform: 0.1s ease-in all;
     height: fit-content;
     background-color: #282424;
     .icons{
