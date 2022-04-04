@@ -1,9 +1,15 @@
 .cardshort:hover {
-  width: 23%;
+  width: 20%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   position: absolute;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
 }
 
 .cardshort:hover .moreinfo {
@@ -42,10 +48,8 @@
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: visibility 0s,opacity 0.2s linear,-webkit-transform 0.2s linear;
-  transition: visibility 0s,opacity 0.2s linear,-webkit-transform 0.2s linear;
-  transition: visibility 0s,opacity 0.2s linear,transform 0.2s linear;
-  transition: visibility 0s,opacity 0.2s linear,transform 0.2s linear,-webkit-transform 0.2s linear;
+  -webkit-transition: visibility 0s,opacity 0.2s linear;
+  transition: visibility 0s,opacity 0.2s linear;
 }
 
 .cardshort .moreinfo p {

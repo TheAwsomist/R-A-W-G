@@ -1,7 +1,9 @@
 .cardshort:hover{
-    width:23%;
+    width:20%;
     height: fit-content;
     position: absolute;
+    transform: scale(1.1);
+    transition: transform 0.2s linear;
     .moreinfo{
         display: flex;
         justify-content: space-between;
@@ -26,7 +28,7 @@
         position: absolute;
         visibility: hidden;
         opacity: 0;
-        transition: visibility 0s,opacity 0.2s linear,transform 0.2s linear;
+        transition: visibility 0s,opacity 0.2s linear;
         p{
             margin-bottom: 5px;
         }
