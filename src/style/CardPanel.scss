@@ -13,11 +13,17 @@
         position:relative;
     }
 }
-.cardpanel{
-    
+a{
+    text-decoration: none;
+    color: white;
 }
 
+
 .placer{
+    width: 100%;
+    display: flex;
+}
+.linker{
     width: 23%;
     display: flex;
 }

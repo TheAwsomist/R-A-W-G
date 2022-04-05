@@ -1,6 +1,7 @@
 
 const initialstate = {
   games: [],
+  searchedgame:[]
 };
 
 export const GameReducer = (state = initialstate, action) => {
@@ -10,7 +11,11 @@ export const GameReducer = (state = initialstate, action) => {
             ...state,
             games:action.payload
         };
-
+      case "searchdata":
+        return{
+          ...state,
+          searchedgame:action.payload
+        }
     default:
       return state;
   }

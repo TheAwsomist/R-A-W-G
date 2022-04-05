@@ -4,3 +4,10 @@ export const calldata = (data) =>{
         payload : data
     }
 }
+
+export const searchdata = (data) =>{
+    return {
+        type:"searchdata",
+        payload : data
+    }
+}
