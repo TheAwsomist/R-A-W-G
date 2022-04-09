@@ -1,0 +1,4 @@
+>Add css to the sidebar
+>Searchbar implementation
+>If possible, sorting of the gamecards aswell
+>GameInfo page implementation

@@ -1,16 +1,26 @@
+.header {
+  width: 75vw;
+}
+
 .header h1 {
   font-size: 72px;
   margin-bottom: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .header p {
   margin: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .header .shiny-header-subtitle {
   background: -webkit-gradient(linear, left top, left bottom, from(#f17877), to(#bc3c60));
   background: linear-gradient(#f17877, #bc3c60);
-  width: 79vw;
+  width: 96%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,7 +34,7 @@
 
 .header .shiny-header-subtitle .shiny {
   height: 4em;
-  width: 20em;
+  width: 40%;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: 0.1s all ease-in;
   transition: 0.1s all ease-in;
@@ -36,6 +46,8 @@
 .header .shiny-header-subtitle .shiny p {
   color: white;
   opacity: 1;
+  text-align: center;
+  width: auto;
 }
 
 .header .shiny-header-subtitle .shiny:hover {

@@ -35,7 +35,8 @@ const CardPanel = () => {
         flexWrap: "wrap",
         columnGap: "20px",
         rowGap: "20px",
-        width: "85vw",
+        width: "78vw",
+        overflowX:"hidden"
       }}
     >
       {/* <div className="cardpanel"> */}

@@ -1,7 +1,9 @@
 
 const initialstate = {
   games: [],
-  searchedgame:[]
+  selectedgames:[],
+  searchinput:"",
+  searcheditems:[]
 };
 
 export const GameReducer = (state = initialstate, action) => {
@@ -14,8 +16,13 @@ export const GameReducer = (state = initialstate, action) => {
       case "searchdata":
         return{
           ...state,
-          searchedgame:action.payload
+          selectedgames:action.payload
         }
+        case "searchinputchange":
+          return{
+            ...state,
+            searchinput:action.payload
+          }
     default:
       return state;
   }

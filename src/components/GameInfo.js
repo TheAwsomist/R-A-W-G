@@ -7,13 +7,13 @@ import { searchdata } from "../redux/actions";
 const GameInfo = () => {
   const id = useParams().pathId;
   var [resultant, SetResult] = useState("");
-  let searchedgames = useSelector((state) => state.searchedgame);
+  let selectedgames = useSelector((state) => state.selectedgames);
   const dispatcher = useDispatch();
 
   const moviegetter = (id) => {
       console.log(id);
-      console.log(searchedgames);
-    var result = searchedgames.filter((game) => game.id == id);
+      console.log(selectedgames);
+    var result = selectedgames.filter((game) => game.id == id);
     if (result.length !== 0) {
     console.log("result already exists");
       SetResult(result);
@@ -22,7 +22,7 @@ const GameInfo = () => {
       axios.get(request).then((response) => {
         const data = response.data;
         SetResult(data);
-        result = [...searchedgames];
+        result = [...selectedgames];
         result.push(data);
         dispatcher(searchdata(result));
       });

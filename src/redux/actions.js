@@ -11,3 +11,10 @@ export const searchdata = (data) =>{
         payload : data
     }
 }
+
+export const searchinputchange = (data) =>{
+    return {
+        type:"searchinputchange",
+        payload : data
+    }
+}
