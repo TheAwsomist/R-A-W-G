@@ -12,9 +12,15 @@ export const searchdata = (data) =>{
     }
 }
 
-export const searchinputchange = (data) =>{
+export const searchdataset = (data) =>{
     return {
-        type:"searchinputchange",
+        type:"searchdataset",
         payload : data
+    }
+}
+
+export const clearsearch = () =>{
+    return {
+        type:"clearsearch"
     }
 }

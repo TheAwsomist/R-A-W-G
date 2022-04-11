@@ -1,5 +1,4 @@
 .cardshort:hover {
-  width: 20%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -38,10 +37,44 @@ a {
 }
 
 .linker {
-  width: 23%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (min-width: 1110px) {
+  .linker {
+    width: 23%;
+  }
+  .cardshort:hover {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .linker {
+    width: 80%;
+  }
+  .cardshort:hover {
+    width: 60%;
+  }
+  .placer {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .placer:hover {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 1110px) and (min-width: 800px) {
+  .linker {
+    width: 30%;
+  }
+  .cardshort:hover {
+    width: 23%;
+  }
 }
 
 .cardshort {

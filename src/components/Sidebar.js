@@ -1,25 +1,32 @@
+import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { calldata, clearsearch } from '../redux/actions';
 import '../style/sidebar.css';
 
 const Sidebar = () => {
+    const dispatcher = useDispatch();
+    const returner = () =>{
+        dispatcher(clearsearch());
+    }
     return ( 
         <div className="sidebar">
-            <p className="sidebar-title">Home</p>
-            <p className="sidebar-title">Reviews</p>
-            <div className="sidebar-username">
-                <p className="sidebar-title">TheAwesomist</p>
-            </div>
-            <div style={{marginTop:"28.8px"}}>
-                <SidebarItems title="Wishlist"/>
-                <SidebarItems title="My Library"/>
-                <SidebarItems title="People You Follow"/>
-                <SidebarItems title="Top Releases"/>
-            </div>
+            <Link to="/">
+                <p className="sidebar-title clickable" onClick={()=>returner()}>Home</p>
+            </Link>
+            <p className="sidebar-title clickable">Reviews</p>
             <p className="sidebar-title">New Releases</p>
             <div style={{marginTop:"28.8px"}}>
                 <SidebarItems title="Last 30 Days"/>
                 <SidebarItems title="This Week"/>
                 <SidebarItems title="Next Week"/>
                 <SidebarItems title="Release Calender"/>
+            </div>
+            <p className="sidebar-title">Top</p>
+            <div style={{marginTop:"28.8px"}}>
+                <SidebarItems title="Best Of The Year"/>
+                <SidebarItems title="Popular In 2021"/>
+                <SidebarItems title="All time top 250"/>
             </div>
         </div>
      );

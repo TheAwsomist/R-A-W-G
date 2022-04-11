@@ -11,6 +11,12 @@
   margin-bottom: 0;
 }
 
+.sidebar .clickable:hover {
+  color: grey;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
 .sidebar-item {
   display: -webkit-box;
   display: -ms-flexbox;

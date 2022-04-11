@@ -1,4 +1,5 @@
 >Add css to the sidebar
->Searchbar implementation
+>Responsiveness
+>Fix the issue of placer div collapsing when in hover in smaller window single card size
 >If possible, sorting of the gamecards aswell
 >GameInfo page implementation

@@ -1,7 +1,9 @@
+
+
 .header {
   width: 75vw;
   h1 {
-    font-size: 72px;
+    font-size: 4rem;
     margin-bottom: 10px;
     width: fit-content;
   }
@@ -12,7 +14,6 @@
 
   .shiny-header-subtitle {
     background: linear-gradient(#f17877, #bc3c60);
-    width: 96%;
     display: flex;
     align-items: center;
     padding: 16px 16px 16px 32px;

@@ -3,7 +3,7 @@
 }
 
 .header h1 {
-  font-size: 72px;
+  font-size: 4rem;
   margin-bottom: 10px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -20,7 +20,6 @@
 .header .shiny-header-subtitle {
   background: -webkit-gradient(linear, left top, left bottom, from(#f17877), to(#bc3c60));
   background: linear-gradient(#f17877, #bc3c60);
-  width: 96%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

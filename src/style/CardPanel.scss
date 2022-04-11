@@ -1,5 +1,4 @@
 .cardshort:hover{
-    width:20%;
     height: fit-content;
     position: absolute;
     transform: scale(1.1);
@@ -21,12 +20,49 @@ a{
 
 .placer{
     width: 100%;
-    display: flex;
+     display: flex;
 }
 .linker{
-    width: 23%;
     display: flex;
 }
+// ==============================================================
+
+
+@media screen and (min-width:1110px) {
+    .linker{
+        width: 23%;
+    }
+    .cardshort:hover{
+        width: 20%;
+    }
+}
+@media screen and (max-width:800px) {
+    .linker{
+        width: 80%;
+        // align-items: center;
+    }
+    .cardshort:hover{
+        width: 60%;
+    }
+    .placer{
+        height: fit-content;
+        // margin-bottom: 50px;
+    }
+    .placer:hover{
+        height: 500px;
+    }
+}
+@media screen and (max-width:1110px) and (min-width:800px) {
+    .linker{
+        width: 30%;
+    }
+    .cardshort:hover{
+        width: 23%;
+    }
+}
+
+
+// ==============================================================
 
 .cardshort{
     .moreinfo{

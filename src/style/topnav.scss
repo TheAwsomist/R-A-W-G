@@ -2,7 +2,8 @@
   margin-top: 1em;
   width: 96vw;
   padding-left: 50px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
   align-items: center;
   justify-content: space-between;
   .top-nav-items {
@@ -14,7 +15,7 @@
         background-color: grey;
         border-radius: 50px;
     }
-    width: 15%;
+    width: 80%;
   }
   h4 {
     font-size: 20px;
@@ -27,7 +28,7 @@
   background-color: rgb(73, 73, 73);
   display: flex;
   align-items: center;
-  width: 75%;
+  width: 96%;
   height: 2.7em;
   border-radius: 30px;
   padding-left: 20px;

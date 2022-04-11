@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 const CardPanel = () => {
   const dispatcher = useDispatch();
   const games = useSelector((state) => state.games);
+  const searchedgames = useSelector((state) => state.searchedgames);
 
   const getter = () => {
     let data;
@@ -36,12 +37,28 @@ const CardPanel = () => {
         columnGap: "20px",
         rowGap: "20px",
         width: "78vw",
-        overflowX:"hidden"
+        overflowX:"hidden",
+        justifyItems:"center"
       }}
     >
       {/* <div className="cardpanel"> */}
-      {games &&
+      {(searchedgames.length == 0) && games &&
         games.map((game) => {
+          return (
+            <Link to={`/${game.id}`} className="linker">
+              <CardShort
+                title={game.name}
+                poster={game.background_image}
+                released={game.released}
+                genres={game.genres}
+                top={game.rating_top}
+                key={game.id}
+              />
+            </Link>
+          );
+        })}
+      {(searchedgames.length != 0) &&
+        searchedgames.map((game) => {
           return (
             <Link to={`/${game.id}`} className="linker">
               <CardShort

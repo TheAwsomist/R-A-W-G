@@ -2,9 +2,10 @@
   margin-top: 1em;
   width: 96vw;
   padding-left: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4fr 1fr;
+      grid-template-columns: 1fr 4fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -20,7 +21,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 15%;
+  width: 80%;
 }
 
 .top-nav .top-nav-items .profilepic {
@@ -44,7 +45,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 75%;
+  width: 96%;
   height: 2.7em;
   border-radius: 30px;
   padding-left: 20px;
