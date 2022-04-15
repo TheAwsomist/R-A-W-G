@@ -1,5 +1,7 @@
->Add css to the sidebar
->Responsiveness
->Fix the issue of placer div collapsing when in hover in smaller window single card size
+>Responsiveness (single handed cards left)
+>take out unnecessary vw
+>box-sizing: border-box
+>standard size of images and alternate image if not image present
+>search delay implementation (set timeout function)
 >If possible, sorting of the gamecards aswell
 >GameInfo page implementation

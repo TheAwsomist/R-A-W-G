@@ -1,19 +1,71 @@
+@media screen and (max-width:1040px){
+    .sidebar-icon{
+        width:30%;
+    }
+}
+@media screen and (min-width:1040px) and (max-width:1180px){
+    .sidebar-icon{
+        width:28%;
+    }
+}
+@media screen and (min-width:1180px) and (max-width:1370px){
+    .sidebar-icon{
+        width:25%;
+    }
+}
+@media screen and (min-width:1370px){
+    .sidebar-icon{
+        width:20%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .sidebar{
+        display:none;
+    }
+}
+
 .sidebar{
     // margin-top: 40px;
     // background-color: #272727;
-    width: 13em;
+    width: 18%;
     height: 100vh;
     padding: 20px 30px;
     padding-left: 50px;
     .sidebar-title{
         font-size: 1.5em;
         font-weight: 600;
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
     .clickable:hover{
         color: grey;
         transition: all 0.1s ease-in;
     }
+    .sidebar-icon{
+        // background-color: pink;
+        height: fit-content;
+        background: #404040;
+        border-radius: 5px;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+        padding: 0.5rem;
+        transition: 0.1s ease all;
+        .icon{
+            width: 8rem;
+            color: white; 
+        }
+    }
+
+    .sidebar-item:hover{
+        .sidebar-icon{
+        background-color: white;
+        .icon{
+            color: #404040;
+        }
+    }
+    }
+
 }
 
 .sidebar-item{

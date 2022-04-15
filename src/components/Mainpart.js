@@ -10,6 +10,7 @@ const MainPart = () => {
           display: "flex",
           flexDirection: "column",
           paddingBottom: "100px",
+          width:"82%"
         }}
       >
         <Header />

@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useDispatch } from "react-redux";
 import { searchdataset } from "../redux/actions";
+import {FaBars} from 'react-icons/fa';
 import "../style/topnav.css";
 
 const TopNav = () => {
@@ -16,6 +17,7 @@ const TopNav = () => {
           style={{ marginLeft: "1.4em" }}
         />
       </div>
+      <div className="hamburger"><FaBars className="hamburger-icon"/></div>
     </div>
   );
 };

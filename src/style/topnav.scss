@@ -1,19 +1,36 @@
+@media screen and (min-width:1000px) {
+  .hamburger{
+    display:none;
+  }
+}
+@media screen and (max-width:1000px) {
+  .hamburger{
+    display: flex;
+    justify-content: center;
+    
+    .hamburger-icon{
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+}
+
 .top-nav {
   margin-top: 1em;
   width: 96vw;
   padding-left: 50px;
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
   align-items: center;
   justify-content: space-between;
   .top-nav-items {
-      display: flex;
-      align-items: center;
-    .profilepic{
-        width: 2.8em;
-        height: 2.8em;
-        background-color: grey;
-        border-radius: 50px;
+    display: flex;
+    align-items: center;
+    .profilepic {
+      width: 2.8em;
+      height: 2.8em;
+      background-color: grey;
+      border-radius: 50px;
     }
     width: 80%;
   }
@@ -22,6 +39,7 @@
     font-weight: 700;
     letter-spacing: 7px;
   }
+
 }
 
 .searchbar {
@@ -32,7 +50,7 @@
   height: 2.7em;
   border-radius: 30px;
   padding-left: 20px;
-    transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
   input {
     margin-left: 5px;
     border: none;
@@ -47,10 +65,11 @@
   }
 }
 
-.searchbar:hover, .searchbar:focus{
+.searchbar:hover,
+.searchbar:focus {
+  background-color: rgb(255, 255, 255);
+  input {
     background-color: rgb(255, 255, 255);
-    input{
-        background-color: rgb(255, 255, 255);
-        color: black;
-    }
+    color: black;
+  }
 }

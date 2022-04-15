@@ -32,14 +32,9 @@ const CardPanel = () => {
   return (
     <div
       style={{
-        display: "flex",
-        flexWrap: "wrap",
-        columnGap: "20px",
-        rowGap: "20px",
-        width: "78vw",
-        overflowX:"hidden",
-        justifyItems:"center"
+
       }}
+      className="cardsholder"
     >
       {/* <div className="cardpanel"> */}
       {(searchedgames.length == 0) && games &&
@@ -88,7 +83,7 @@ const CardShort = ({ title, poster, released, genres, top }) => {
             <img src={Xbox} alt="" width={20} height={20} />
           </div>
           <h2>{title}</h2>
-          <div className="tag">+ 494</div>
+          <div className="tag"><p>♥ 494</p></div>
           <div className="moreinfo">
             <p style={{ color: "grey" }}>Genre:</p>
             <p style={{ width: "fit-content" }}>

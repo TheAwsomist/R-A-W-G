@@ -1,3 +1,17 @@
 .mainportion{
     display: flex;
+    margin-top: 2rem;
 }
+
+@media screen and (max-width:1000px){
+    .mainportion{
+        justify-content: center;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+

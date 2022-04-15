@@ -22,13 +22,19 @@
     .shiny {
       height: 4em;
       width: 40%;
+      padding: 20px;
       background-color: rgba(255, 255, 255, 0.1);
       transition: 0.1s all ease-in;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 40px;
       p {
         color: white;
         opacity: 1;
         text-align: center;
         width: auto;
+        margin: 0;
       }
       outline: none;
       border: none;
