@@ -1,0 +1,70 @@
+.game-cover {
+  width: 80vw;
+  // border: 1px solid white;
+  // z-index: -1;
+  // background: radial-gradient(at 50% 50%, rgba(0,0,0,0.7) 20%,
+  // rgba(21,21,21,1) 70%), url(https://images6.alphacoders.com/109/thumb-1920-1091060.png);
+}
+
+.center-grid {
+//   border: 1px solid white;
+  display: grid;
+  grid-template-columns: 57% 40%;
+  height: 70vh;
+  width: 70%;
+  margin: auto;
+  column-gap: 30px;
+  div {
+    border: 1px solid white;
+  }
+  .left-grid,
+  .right-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .video-box {
+      grid-column: 1/3;
+      grid-row: 1/3;
+    }
+    .heading,
+    .smaller-boxes {
+      grid-column: 1/3;
+    }
+    .smaller-boxes {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      border: none;
+
+      .smbox-1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        h4 {
+          font-size: 24px;
+          font-weight: 700;
+          padding-bottom: 8px;
+          letter-spacing: 1.2px;
+        }
+        p{
+            max-width: 135px;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 3px;
+            color: grey;
+            text-decoration: underline;
+        }
+      }
+      .smbox-2{
+        border-right: 1px solid grey;
+        border-left: 1px solid grey;
+      }
+    }
+    .heading {
+      font-size: 72px;
+      line-height: 74px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      grid-row: 1/4;
+    }
+  }
+}
