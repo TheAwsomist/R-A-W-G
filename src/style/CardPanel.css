@@ -29,8 +29,8 @@
   height: -moz-fit-content;
   height: fit-content;
   position: absolute;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.0);
+          transform: scale(1.0);
   -webkit-transition: -webkit-transform 0.3s linear;
   transition: -webkit-transform 0.3s linear;
   transition: transform 0.3s linear;
@@ -80,7 +80,7 @@ a {
     width: 23%;
   }
   .cardshort:hover {
-    width: 20%;
+    width: 19%;
   }
 }
 
@@ -89,7 +89,7 @@ a {
     width: 42%;
   }
   .cardshort:hover {
-    width: 42%;
+    width: 41%;
     height: 625px;
   }
   .placer {
@@ -113,7 +113,7 @@ a {
     width: 30%;
   }
   .cardshort:hover {
-    width: 23%;
+    width: 22%;
   }
 }
 
